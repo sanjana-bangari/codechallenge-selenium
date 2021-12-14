@@ -1,0 +1,95 @@
+{
+  "id": "332edaf2-5b86-42bf-8e5a-6119f4491288",
+  "version": "2.0",
+  "name": "UIAutomationTests",
+  "url": "https://bluenotetherapeutics.com",
+  "tests": [{
+    "id": "b492ea9d-6892-4bc1-91f9-ac32834f2ffc",
+    "name": "CanceNStressImageValidation",
+    "commands": [{
+      "id": "5b7edcc3-6db6-427b-9db6-b9cdc33ebd1b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f37f6e3-9825-41d9-ac16-4d381203a40c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "981x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bda74cd-4bc9-48af-bc85-1b4432bedcea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=☰",
+      "targets": [
+        ["linkText=☰", "linkText"],
+        ["css=#nav-r > .white", "css:finder"],
+        ["xpath=//a[contains(text(),'☰')]", "xpath:link"],
+        ["xpath=//a[@onclick='javascript:toggleMenu();']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-r']/a", "xpath:idRelative"],
+        ["xpath=//nav/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'☰')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29684426-def2-4fe9-863d-6a5ec2780298",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pv1:nth-child(1) > .pa3",
+      "targets": [
+        ["css=.pv1:nth-child(1) > .pa3", "css:finder"],
+        ["xpath=(//a[contains(text(),'Cancer and Stress')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mobile-menu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/why')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff16f9f9-15a9-43e0-8642-60cd4d5f9626",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.w-50-ns > .w-100",
+      "targets": [
+        ["css=.w-50-ns > .w-100", "css:finder"],
+        ["xpath=//div[@id='cover-bg']/div/div/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5b0d435-e759-4eed-9bca-1854dec73fff",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.pb0",
+      "targets": [
+        ["css=.pb0", "css:finder"],
+        ["xpath=//div[4]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6365686-9a6c-47ea-a805-e64f1ae0e063",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(23)",
+      "targets": [
+        ["css=p:nth-child(23)", "css:finder"],
+        ["xpath=//p[18]", "xpath:position"],
+        ["xpath=//p[contains(.,'Cognitive-behavioral Stress Management Intervention Decreases the Prevalence of Depression and Enhances Benefit Finding Among Women Under Treatment for Early Stage Breast Cancer.\nAntoni MH, Lehman JM, Kilbourn KM, et al.\nHealth Psychol. 2001 Jan;20(1):20-32.\nhttps://pubmed.ncbi.nlm.nih.gov/11199062/')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7d84afe3-0bb8-49e5-a5da-60d7afffbfd6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://bluenotetherapeutics.com/"],
+  "plugins": []
+}
