@@ -1,0 +1,403 @@
+{
+  "id": "a46915da-2464-4e40-93ce-3fd9695a5dc7",
+  "version": "2.0",
+  "name": "BluenoteSeleniumproject",
+  "url": "https://bluenotetherapeutics.com",
+  "tests": [{
+    "id": "421aeeef-ad4a-42bc-b0f8-236f63bb0eae",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "6f1fe9d9-fc59-4179-860e-82a18488e3ec",
+    "name": "MainPageValidation",
+    "commands": [{
+      "id": "c7af0504-27b1-4a76-9796-9d7911250326",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df4137ce-92f3-41cb-934a-7f5dd01d0eae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "978x867",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1250c352-5883-41b8-8770-54b0903dbfbc",
+      "comment": "checking Blue Note Therapeutics link",
+      "command": "assertElementPresent",
+      "target": "css=.pa3 > .br0",
+      "targets": [
+        ["css=.pa3 > .br0", "css:finder"],
+        ["xpath=//img[@alt='Blue Note Therapeutics']", "xpath:img"],
+        ["xpath=//nav[@id='nav-main']/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c3cc984-0ec0-4f29-901d-9bcf882df83f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-50-ns > .w-100",
+      "targets": [
+        ["css=.w-50-ns > .w-100", "css:finder"],
+        ["xpath=//div[@id='cover-bg']/div/div/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b709b627-5f1c-4f2d-8e88-175bfff74dec",
+      "comment": "Checking image ",
+      "command": "assertElementPresent",
+      "target": "css=.w-50-ns > .w-100",
+      "targets": [
+        ["css=.w-50-ns > .w-100", "css:finder"],
+        ["xpath=//div[@id='cover-bg']/div/div/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d8410d-b41c-4970-b739-ba3f0fbe3e52",
+      "comment": "Checking Helping Cancer Patients Live Better Text Heading",
+      "command": "assertElementPresent",
+      "target": "css=.f1-l",
+      "targets": [
+        ["css=.f1-l", "css:finder"],
+        ["xpath=//div[@id='cover-bg']/div/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Helping Cancer Patients Live Better')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d020aae-b3f5-47df-96bc-be60f5ed8ded",
+      "comment": "",
+      "command": "click",
+      "target": "css=.f6:nth-child(1)",
+      "targets": [
+        ["css=.f6:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Learn more')]", "xpath:link"],
+        ["xpath=//div[@id='cover-bg']/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#about')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "075e2bb6-a24a-4fdc-b24f-f813aafcb4f1",
+      "comment": "Clicking Learn more link to see more details to end",
+      "command": "assertElementPresent",
+      "target": "css=.mw7 > .f2",
+      "targets": [
+        ["css=.mw7 > .f2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Latest News')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25d44631-50a8-4db1-9a17-6de246a78c1c",
+      "comment": "Checking Latest News Heading",
+      "command": "assertElementPresent",
+      "target": "css=.w-100:nth-child(1) > .no-underline > .f4",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .no-underline > .f4", "css:finder"],
+        ["xpath=//a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blue Note Explores the Impact of Technology on Cancer Care at the NCCN Virtual Policy Summit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25052ed2-dc38-4508-a2dc-6302c149e681",
+      "comment": "Checking text",
+      "command": "assertElementPresent",
+      "target": "css=.w-100:nth-child(1) > .no-underline > .link",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .no-underline > .link", "css:finder"],
+        ["xpath=//p[4]", "xpath:position"],
+        ["xpath=//p[contains(.,'Read more →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f59272df-ff86-42f4-a412-de07782f88ac",
+      "comment": "Read More link",
+      "command": "click",
+      "target": "css=.w-100:nth-child(1) > .no-underline > .link",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .no-underline > .link", "css:finder"],
+        ["xpath=//p[4]", "xpath:position"],
+        ["xpath=//p[contains(.,'Read more →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5345b29-d4a0-4da2-9f2c-3109fabe204c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b81e0260-6f7d-4bc3-8a51-cc9397e39652",
+    "name": "MenuPageValidations",
+    "commands": [{
+      "id": "33ff84ff-d922-4bfa-a434-c77f637b920f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34b607e2-c443-45bc-a053-7e575162ffc3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "978x867",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd18be97-08fc-4161-8e98-a5a5d2b6f585",
+      "comment": "Clicking on MenuButton",
+      "command": "click",
+      "target": "linkText=☰",
+      "targets": [
+        ["linkText=☰", "linkText"],
+        ["css=#nav-r > .white", "css:finder"],
+        ["xpath=//a[contains(text(),'☰')]", "xpath:link"],
+        ["xpath=//a[@onclick='javascript:toggleMenu();']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-r']/a", "xpath:idRelative"],
+        ["xpath=//nav/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'☰')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cc1b35c-1bb0-4f69-abe7-7228378e2e7a",
+      "comment": "Clicking on Cancer and Stress button",
+      "command": "click",
+      "target": "css=.pv1:nth-child(1) > .pa3",
+      "targets": [
+        ["css=.pv1:nth-child(1) > .pa3", "css:finder"],
+        ["xpath=(//a[contains(text(),'Cancer and Stress')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mobile-menu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/why')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e627e73e-8141-407f-a0c4-88667437022c",
+      "comment": "Clicking on Menu button",
+      "command": "click",
+      "target": "linkText=☰",
+      "targets": [
+        ["linkText=☰", "linkText"],
+        ["css=#nav-r > .white", "css:finder"],
+        ["xpath=//a[contains(text(),'☰')]", "xpath:link"],
+        ["xpath=//a[@onclick='javascript:toggleMenu();']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-r']/a", "xpath:idRelative"],
+        ["xpath=//nav/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'☰')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59753641-4024-4981-af8f-e570ec4c0d10",
+      "comment": "Clicking on News Button",
+      "command": "click",
+      "target": "css=.pv1:nth-child(3) > .pa3",
+      "targets": [
+        ["css=.pv1:nth-child(3) > .pa3", "css:finder"],
+        ["xpath=(//a[contains(text(),'News')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mobile-menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/news')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b6cc0d1-d5ce-4abc-babf-478a95ca02ce",
+      "comment": "Checking Text validation",
+      "command": "assertElementPresent",
+      "target": "css=.f2",
+      "targets": [
+        ["css=.f2", "css:finder"],
+        ["xpath=//div[@id='cover-bg']/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Latest News')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf16cf01-0996-482e-a199-c0408c31c35d",
+      "comment": "Checking text Validation",
+      "command": "assertElementPresent",
+      "target": "css=.w-100-ns:nth-child(1) .f4",
+      "targets": [
+        ["css=.w-100-ns:nth-child(1) .f4", "css:finder"],
+        ["xpath=//a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blue Note Explores the Impact of Technology on Cancer Care at the NCCN Virtual Policy Summit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f46df067-2203-4de4-a884-3630c72aefb6",
+      "comment": "Clicking on Read More link navigated to next window",
+      "command": "click",
+      "target": "css=.w-100-ns:nth-child(1) .link",
+      "targets": [
+        ["css=.w-100-ns:nth-child(1) .link", "css:finder"],
+        ["xpath=//p[4]", "xpath:position"],
+        ["xpath=//p[contains(.,'Read more →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a15bd351-176b-442b-b5d6-c6be67989e67",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0ddd0936-2623-4da2-a471-35f8dbe2a3be",
+    "name": "CareesButtonValidation",
+    "commands": [{
+      "id": "30adda19-e0ac-4127-9a6b-107c53724488",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15fba934-9278-416e-93e0-0e80be5390bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "978x867",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "768ad2f2-ae8f-4bb3-8e40-4b57bc56a801",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=☰",
+      "targets": [
+        ["linkText=☰", "linkText"],
+        ["css=#nav-r > .white", "css:finder"],
+        ["xpath=//a[contains(text(),'☰')]", "xpath:link"],
+        ["xpath=//a[@onclick='javascript:toggleMenu();']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-r']/a", "xpath:idRelative"],
+        ["xpath=//nav/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'☰')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b637fb05-0f6c-4c6a-b6a4-c499b1befe84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pv1:nth-child(5) > .pa3",
+      "targets": [
+        ["css=.pv1:nth-child(5) > .pa3", "css:finder"],
+        ["xpath=(//a[contains(text(),'Careers')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mobile-menu']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/jobs')])[2]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a1aba56-d7b0-4583-8ef7-9bfc790cdd80",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.f3-ns",
+      "targets": [
+        ["css=.f3-ns", "css:finder"],
+        ["xpath=//a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Quality Assurance Engineer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8abfece0-2c63-4715-a185-f63fa1a2d7d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dib",
+      "targets": [
+        ["css=.dib", "css:finder"],
+        ["xpath=//p[4]", "xpath:position"],
+        ["xpath=//p[contains(.,'Read more →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a24bd3a-caa9-44b5-aeaa-00e3a04e1137",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.cms > p:nth-child(1)",
+      "targets": [
+        ["css=.cms > p:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blue Note Therapeutics is a prescription digital therapeutics company singularly dedicated to transforming mental health care for cancer patients. We aim to make mental health care available to any cancer patient at any time by merging deep scientific and clinical expertise, neuroscience, and digital innovation.  Working closely with leading cancer centers, community oncology and teams of patients, Blue Note is developing clinically validated prescription digital therapeutics to help reduce anxiety, depression and other distress related to cancer. For more information, visit us at www.bluenotetx.com.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "539f85bc-bf7b-4b1a-b5c4-b05e359c81ec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=www.bluenotetx.com",
+      "targets": [
+        ["linkText=www.bluenotetx.com", "linkText"],
+        ["css=p:nth-child(1) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'www.bluenotetx.com')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.bluenotetx.com']", "xpath:href"],
+        ["xpath=//div[2]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'www.bluenotetx.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8ad8e92-10ae-4ef3-964c-c6b888a077bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=www.bluenotetx.com",
+      "targets": [
+        ["linkText=www.bluenotetx.com", "linkText"],
+        ["css=p:nth-child(1) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'www.bluenotetx.com')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.bluenotetx.com']", "xpath:href"],
+        ["xpath=//div[2]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'www.bluenotetx.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "239e45a1-abff-48c3-a34a-773645d4b17b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=ul:nth-child(6) > li:nth-child(11)",
+      "targets": [
+        ["css=ul:nth-child(6) > li:nth-child(11)", "css:finder"],
+        ["xpath=//ul[2]/li[11]", "xpath:position"],
+        ["xpath=//li[contains(.,'TRAVEL: Ability to travel if needed (infrequent)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06a76945-fbea-4333-857c-cabb5159a596",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=strong:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bluenotetherapeutics.com/privacy/')]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5de8767-be7e-4e8e-b74c-0f8fb3330722",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6638454b-101c-475c-bb46-1ae01dbec6f9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["421aeeef-ad4a-42bc-b0f8-236f63bb0eae"]
+  }],
+  "urls": ["https://bluenotetherapeutics.com/"],
+  "plugins": []
+}
